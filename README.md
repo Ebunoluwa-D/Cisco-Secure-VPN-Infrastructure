@@ -1,4 +1,4 @@
-Project: Enterprise Site-to-Site IPsec VPN
+**Project: Enterprise Site-to-Site IPsec VPN**
 Overview
 A secure networking project connecting two remote sites (Branch A and HQ B) across a simulated ISP using an encrypted IPsec tunnel.
 
@@ -9,7 +9,7 @@ Security: IKEv1 Phase 1 (AES/SHA/DH Group 2), IPsec Phase 2 (ESP-AES-SHA)
 
 Routing: Static Routing with Default Gateways
 
- Troubleshooting & Resolution Log
+ **Troubleshooting & Resolution Log**
 During the deployment of this VPN, several common Layer 1 and Layer 3 issues were identified and resolved:
 
 1. Issue: "MM_NO_STATE" in ISAKMP SA
