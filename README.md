@@ -2,14 +2,12 @@
 Overview
 A secure networking project connecting two remote sites (Branch A and HQ B) across a simulated ISP using an encrypted IPsec tunnel.
 
-Tech Stack
+**Tech Stack**
 Hardware: Cisco ISR 4331 Routers
-
 Security: IKEv1 Phase 1 (AES/SHA/DH Group 2), IPsec Phase 2 (ESP-AES-SHA)
-
 Routing: Static Routing with Default Gateways
 
- **Troubleshooting & Resolution Log**
+ **Troubleshooting & Resolution Log**:
 During the deployment of this VPN, several common Layer 1 and Layer 3 issues were identified and resolved:
 
 1. Issue: "MM_NO_STATE" in ISAKMP SA
@@ -28,6 +26,9 @@ Resolution: Executed the match address 101 command within the Crypto Map configu
 
 3. Issue: Initial Packet Loss (25%)
 Symptoms: The first ping from PC-A to Server-B failed, while subsequent pings succeeded.
+
+
+
 
 Explanation: This is expected behavior for a "lazy" VPN tunnel. The first packet triggers the IKE negotiation process; since the tunnel isn't fully built until the handshake completes, the initial packet times out.
 
